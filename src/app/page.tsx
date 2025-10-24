@@ -99,10 +99,10 @@ const MembersSection = () => (
         {members.map((member) => (
           <Card
             key={member.name}
-            className="overflow-hidden text-center transition-all duration-300 ease-in-out hover:shadow-primary/20 hover:shadow-lg hover:-translate-y-2"
+            className="overflow-hidden text-center transition-all duration-300 ease-in-out hover:shadow-primary/20 hover:shadow-lg hover:-translate-y-2 flex flex-col"
           >
-            <Link href={`/members/${member.slug}`}>
-              <CardContent className="p-6">
+            <Link href={`/members/${member.slug}`} className="flex flex-col flex-grow">
+              <CardContent className="p-6 flex flex-col flex-grow">
                 <Avatar className="mx-auto mb-4 h-24 w-24 border-2 border-primary">
                   <AvatarImage
                     src={getImageUrl(member.imageUrlId).url}
@@ -119,7 +119,7 @@ const MembersSection = () => (
                   </AvatarFallback>
                 </Avatar>
                 <h3 className="text-lg font-bold font-headline">{member.name}</h3>
-                <p className="text-sm text-primary">{member.role}</p>
+                <p className="text-sm text-primary flex-grow">{member.role}</p>
                 <div className="mt-4 flex flex-wrap justify-center gap-2">
                   {member.skills.slice(0, 2).map((skill) => (
                     <Badge key={skill} variant="secondary">
@@ -132,6 +132,19 @@ const MembersSection = () => (
                 </div>
               </CardContent>
             </Link>
+            <div className="mt-auto border-t border-border/40 p-4 flex justify-center space-x-4">
+              {member.socials.map((social) => (
+                <Link
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
+                  <social.icon className="h-5 w-5" />
+                </Link>
+              ))}
+            </div>
           </Card>
         ))}
       </div>

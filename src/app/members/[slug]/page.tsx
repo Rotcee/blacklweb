@@ -6,7 +6,7 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, Network } from "lucide-react";
+import { Home, Network } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 export function generateStaticParams() {
@@ -34,11 +34,11 @@ export default function MemberPage({ params }: { params: { slug: string } }) {
   return (
     <div className="min-h-screen bg-background text-foreground">
        <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 max-w-screen-2xl items-center">
+        <div className="container flex h-14 max-w-screen-2xl items-center justify-end">
             <Button asChild variant="ghost" size="sm">
-                <Link href="/#members" className="flex items-center gap-2">
-                    <ArrowLeft className="h-4 w-4" />
-                    Back to Team
+                <Link href="/" className="flex items-center gap-2">
+                    <Home className="h-4 w-4" />
+                    Home
                 </Link>
             </Button>
         </div>
@@ -50,8 +50,6 @@ export default function MemberPage({ params }: { params: { slug: string } }) {
                 <AvatarImage
                   src={getImageUrl(member.imageUrlId).url}
                   alt={member.name}
-                  width={200}
-                  height={200}
                   data-ai-hint={getImageUrl(member.imageUrlId).hint}
                 />
                 <AvatarFallback>
