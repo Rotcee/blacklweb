@@ -4,8 +4,7 @@ import {
   Github,
   Linkedin,
   Twitter,
-  Lock,
-  Shield,
+  ShieldCheck,
   ArrowRight,
   Mail,
   User,
@@ -27,6 +26,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { members, projects } from "./data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Footer } from "@/components/footer";
+import { Logo } from "@/components/logo";
 
 const getImageUrl = (id: string) => {
   const image = PlaceHolderImages.find((img) => img.id === id);
@@ -39,7 +39,7 @@ const Header = () => (
   <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
     <div className="container flex h-14 max-w-screen-2xl items-center">
       <Link href="/" className="mr-6 flex items-center space-x-2">
-        <Lock className="h-6 w-6 text-primary" />
+        <Logo className="h-6 w-6 text-primary" />
         <span className="font-bold font-headline">BlackL</span>
       </Link>
       <nav className="flex items-center gap-4 text-base lg:gap-6 ml-auto">
@@ -68,7 +68,7 @@ const Header = () => (
 
 const HeroSection = () => (
   <section className="container flex h-[calc(100dvh-3.5rem)] flex-col items-center justify-center text-center">
-    <Shield className="mb-8 h-24 w-24 animate-pulse text-primary drop-shadow-[0_0_15px_hsl(var(--primary)/0.5)]" />
+    <Logo className="mb-8 h-24 w-24 animate-pulse text-primary drop-shadow-[0_0_15px_hsl(var(--primary)/0.5)]" />
     <h1 className="text-4xl font-extrabold tracking-tight font-headline md:text-6xl lg:text-7xl">
       BlackL Cyber Group
     </h1>

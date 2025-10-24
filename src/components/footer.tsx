@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Github, Linkedin, Lock, Twitter } from "lucide-react";
+import { Github, Linkedin, Twitter } from "lucide-react";
+import { Logo } from "./logo";
 
 const Copyright = () => {
   const [year, setYear] = useState(new Date().getFullYear());
@@ -22,7 +23,7 @@ export const Footer = () => (
   <footer className="border-t border-border/40">
     <div className="container flex flex-col items-center justify-between gap-4 py-10 md:h-24 md:flex-row md:py-0">
       <div className="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
-        <Lock className="hidden h-6 w-6 text-primary md:block" />
+        <Logo className="hidden h-6 w-6 text-primary md:block" />
         <Copyright />
       </div>
       <div className="flex space-x-4">
