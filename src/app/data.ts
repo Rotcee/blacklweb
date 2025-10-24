@@ -27,7 +27,7 @@ type Project = {
 export const projects: Project[] = [
   {
     id: "chimera",
-    title: "Project Chimera",
+    title: "Bankai",
     description:
       "An advanced honeypot network designed to attract and analyze new strains of IoT malware.",
   },

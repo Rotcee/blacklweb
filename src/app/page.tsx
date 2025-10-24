@@ -41,7 +41,7 @@ const Header = () => (
         <Lock className="h-6 w-6 text-primary" />
         <span className="font-bold font-headline">BlackL</span>
       </Link>
-      <nav className="flex items-center gap-4 text-sm lg:gap-6 ml-auto">
+      <nav className="flex items-center gap-4 text-base lg:gap-6 ml-auto">
         <Link
           href="#about"
           className="text-muted-foreground/80 transition-colors hover:text-foreground"
