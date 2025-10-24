@@ -6,7 +6,7 @@ import { Github, Linkedin, Twitter } from "lucide-react";
 import { Logo } from "./logo";
 
 const Copyright = () => {
-  const [year, setYear] = useState(new Date().getFullYear());
+  const [year, setYear] = useState<number | null>(null);
 
   useEffect(() => {
     setYear(new Date().getFullYear());
@@ -14,7 +14,7 @@ const Copyright = () => {
 
   return (
     <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-      &copy; {year} BlackL Cyber Group. All rights reserved.
+      &copy; {year || new Date().getFullYear()} BlackL Cyber Group. All rights reserved.
     </p>
   );
 };
