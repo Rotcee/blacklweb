@@ -6,7 +6,6 @@ import {
   Twitter,
   Lock,
   Shield,
-  Network,
   ArrowRight,
   Mail,
   User,
@@ -15,7 +14,6 @@ import {
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -24,7 +22,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { members, projects } from "./data";
+import { members } from "./data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const getImageUrl = (id: string) => {
@@ -42,12 +40,6 @@ const Header = () => (
         <span className="font-bold font-headline">BlackL</span>
       </Link>
       <nav className="flex items-center gap-4 text-sm lg:gap-6 ml-auto">
-        <Link
-          href="#about"
-          className="text-muted-foreground/80 transition-colors hover:text-foreground"
-        >
-          About
-        </Link>
         <Link
           href="#members"
           className="text-muted-foreground/80 transition-colors hover:text-foreground"
@@ -78,8 +70,8 @@ const HeroSection = () => (
     </p>
     <div className="mt-8 flex flex-wrap justify-center gap-4">
       <Button asChild size="lg">
-        <Link href="#about">
-          Learn More <ArrowRight className="ml-2 h-5 w-5" />
+        <Link href="#members">
+          Meet the Team <ArrowRight className="ml-2 h-5 w-5" />
         </Link>
       </Button>
       <Button asChild variant="outline" size="lg">
@@ -89,48 +81,8 @@ const HeroSection = () => (
   </section>
 );
 
-const AboutSection = () => (
-  <section id="about" className="w-full py-24 sm:py-32 bg-card/50">
-    <div className="container mx-auto grid items-center gap-8 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
-      <div className="space-y-4">
-        <Badge variant="outline">Our Mission</Badge>
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
-          Pioneering Digital Security
-        </h2>
-        <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          Our mission is to explore the depths of cybersecurity, uncovering
-          vulnerabilities and developing innovative solutions to protect the
-          digital world. We are committed to sharing knowledge and fostering the
-          next generation of security professionals.
-        </p>
-      </div>
-      <div className="space-y-8">
-        <h3 className="text-2xl font-bold font-headline">Key Projects</h3>
-        <div className="grid gap-6">
-          {projects.map((project) => (
-            <Card
-              key={project.title}
-              className="transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10"
-            >
-              <CardHeader>
-                <div className="flex items-center gap-4">
-                  <Network className="h-8 w-8 text-primary" />
-                  <CardTitle>{project.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground">{project.description}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </div>
-  </section>
-);
-
 const MembersSection = () => (
-  <section id="members" className="w-full py-24 sm:py-32">
+  <section id="members" className="w-full py-24 sm:py-32 bg-card/50">
     <div className="container px-4 md:px-6">
       <div className="flex flex-col items-center justify-center space-y-4 text-center">
         <Badge variant="outline">The Team</Badge>
@@ -149,44 +101,37 @@ const MembersSection = () => (
             key={member.name}
             className="overflow-hidden text-center transition-all duration-300 ease-in-out hover:shadow-primary/20 hover:shadow-lg hover:-translate-y-2"
           >
-            <CardContent className="p-6">
-              <Avatar className="mx-auto mb-4 h-24 w-24 border-2 border-primary">
-                <AvatarImage
-                  src={getImageUrl(member.imageUrlId).url}
-                  alt={member.name}
-                  width={100}
-                  height={100}
-                  data-ai-hint={getImageUrl(member.imageUrlId).hint}
-                />
-                <AvatarFallback>
-                  {member.name
-                    .split(" ")
-                    .map((n) => n[0])
-                    .join("")}
-                </AvatarFallback>
-              </Avatar>
-              <h3 className="text-lg font-bold font-headline">{member.name}</h3>
-              <p className="text-sm text-primary">{member.role}</p>
-              <div className="mt-4 flex flex-wrap justify-center gap-2">
-                {member.skills.map((skill) => (
-                  <Badge key={skill} variant="secondary">
-                    {skill}
-                  </Badge>
-                ))}
-              </div>
-              <div className="mt-6 flex justify-center space-x-4">
-                {member.socials.map((social, index) => (
-                  <Link
-                    key={index}
-                    href={social.url}
-                    className="text-muted-foreground transition-colors hover:text-primary"
-                    aria-label={`${member.name} on ${social.name}`}
-                  >
-                    <social.icon className="h-5 w-5" />
-                  </Link>
-                ))}
-              </div>
-            </CardContent>
+            <Link href={`/members/${member.slug}`}>
+              <CardContent className="p-6">
+                <Avatar className="mx-auto mb-4 h-24 w-24 border-2 border-primary">
+                  <AvatarImage
+                    src={getImageUrl(member.imageUrlId).url}
+                    alt={member.name}
+                    width={100}
+                    height={100}
+                    data-ai-hint={getImageUrl(member.imageUrlId).hint}
+                  />
+                  <AvatarFallback>
+                    {member.name
+                      .split(" ")
+                      .map((n) => n[0])
+                      .join("")}
+                  </AvatarFallback>
+                </Avatar>
+                <h3 className="text-lg font-bold font-headline">{member.name}</h3>
+                <p className="text-sm text-primary">{member.role}</p>
+                <div className="mt-4 flex flex-wrap justify-center gap-2">
+                  {member.skills.slice(0, 2).map((skill) => (
+                    <Badge key={skill} variant="secondary">
+                      {skill}
+                    </Badge>
+                  ))}
+                  {member.skills.length > 2 && (
+                     <Badge variant="secondary">...</Badge>
+                  )}
+                </div>
+              </CardContent>
+            </Link>
           </Card>
         ))}
       </div>
@@ -195,7 +140,7 @@ const MembersSection = () => (
 );
 
 const ContactSection = () => (
-  <section id="contact" className="w-full py-24 sm:py-32 bg-card/50">
+  <section id="contact" className="w-full py-24 sm:py-32">
     <div className="container px-4 md:px-6">
       <div className="flex flex-col items-center justify-center space-y-4 text-center">
         <Badge variant="outline">Contact</Badge>
@@ -292,7 +237,6 @@ export default function HomePage() {
       <Header />
       <main className="flex-1">
         <HeroSection />
-        <AboutSection />
         <MembersSection />
         <ContactSection />
       </main>
