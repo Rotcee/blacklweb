@@ -4,13 +4,11 @@ import {
   Github,
   Linkedin,
   Twitter,
-  ShieldCheck,
   ArrowRight,
   Mail,
   User,
   MessageSquare,
-  Network,
-  Users,
+  Network
 } from "lucide-react";
 import {
   Card,

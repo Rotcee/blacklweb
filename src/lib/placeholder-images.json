@@ -2,8 +2,8 @@
   "placeholderImages": [
     {
       "id": "member1",
-      "description": "Profile picture for Alex 'Glitch' Volkov",
-      "imageUrl": "https://images.unsplash.com/photo-1592849902530-cbabb686381d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjEyNjIzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Profile picture for Héctor 'Rotce' Villar",
+      "imageUrl": "/images/hector_pfp.jpg",
       "imageHint": "portrait person"
     },
     {

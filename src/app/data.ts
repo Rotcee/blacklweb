@@ -47,8 +47,8 @@ export const projects: Project[] = [
 
 export const members: Member[] = [
   {
-    name: "Alex 'Glitch' Volkov",
-    slug: "alex-volkov",
+    name: "Héctor 'Rotce' Villar",
+    slug: "hector-villar",
     role: "Team Lead & Threat Analyst",
     bio: "With a knack for deconstructing complex digital threats, Alex leads the team with a sharp analytical mind and a passion for staying one step ahead of adversaries. His expertise in malware analysis is the cornerstone of our defensive strategies.",
     skills: ["Malware Analysis", "Reverse Engineering", "Threat Intelligence"],
@@ -58,7 +58,7 @@ export const members: Member[] = [
       { name: "LinkedIn", icon: Linkedin, url: "#" },
       { name: "Twitter", icon: Twitter, url: "#" },
     ],
-    projects: ["chimera", "aegis"],
+    projects: [],
   },
   {
     name: "Maria 'Nyx' Rodriguez",
