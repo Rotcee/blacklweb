@@ -10,6 +10,8 @@ import {
   Mail,
   User,
   MessageSquare,
+  Network,
+  Users,
 } from "lucide-react";
 import {
   Card,
@@ -22,7 +24,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { members } from "./data";
+import { members, projects } from "./data";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 
 const getImageUrl = (id: string) => {
@@ -40,6 +42,12 @@ const Header = () => (
         <span className="font-bold font-headline">BlackL</span>
       </Link>
       <nav className="flex items-center gap-4 text-sm lg:gap-6 ml-auto">
+        <Link
+          href="#about"
+          className="text-muted-foreground/80 transition-colors hover:text-foreground"
+        >
+          About Us
+        </Link>
         <Link
           href="#members"
           className="text-muted-foreground/80 transition-colors hover:text-foreground"
@@ -80,6 +88,41 @@ const HeroSection = () => (
     </div>
   </section>
 );
+
+const AboutUsSection = () => (
+  <section id="about" className="w-full py-24 sm:py-32">
+    <div className="container px-4 md:px-6">
+      <div className="flex flex-col items-center justify-center space-y-4 text-center">
+        <Badge variant="outline">About Us</Badge>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline">
+          Our Mission & Projects
+        </h2>
+        <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          We are a team of students passionate about cybersecurity, dedicated to exploring the depths of digital security through hands-on projects and collaborative research. Our goal is to innovate and educate, making the digital world a safer place.
+        </p>
+      </div>
+      <div className="mx-auto mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        {projects.map((project) => (
+           <Card
+            key={project.id}
+            className="transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10 flex flex-col"
+          >
+            <CardHeader>
+              <div className="flex items-center gap-4">
+                <Network className="h-8 w-8 text-primary" />
+                <CardTitle>{project.title}</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent className="flex-grow">
+              <p className="text-muted-foreground">{project.description}</p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 
 const MembersSection = () => (
   <section id="members" className="w-full py-24 sm:py-32 bg-card/50">
@@ -250,6 +293,7 @@ export default function HomePage() {
       <Header />
       <main className="flex-1">
         <HeroSection />
+        <AboutUsSection />
         <MembersSection />
         <ContactSection />
       </main>
