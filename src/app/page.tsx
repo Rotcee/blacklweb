@@ -68,7 +68,7 @@ const Header = () => (
 
 const HeroSection = () => (
   <section className="container flex h-[calc(100dvh-3.5rem)] flex-col items-center justify-center text-center">
-    <Logo className="mb-8 h-24 w-24 animate-pulse text-primary drop-shadow-[0_0_15px_hsl(var(--primary)/0.5)]" />
+    <Logo className="mb-8 h-28 w-28 animate-pulse text-primary drop-shadow-[0_0_15px_hsl(var(--primary)/0.5)]" />
     <h1 className="text-4xl font-extrabold tracking-tight font-headline md:text-6xl lg:text-7xl">
       BlackL Cyber Group
     </h1>
