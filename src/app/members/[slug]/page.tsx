@@ -23,8 +23,9 @@ const getImageUrl = (id: string) => {
     : { url: "", hint: "" };
 };
 
-export default function MemberPage({ params }: { params: { slug: string } }) {
-  const member = members.find((m) => m.slug === params.slug);
+export default async function MemberPage({ params }: { params: { slug: string } }) {
+  const { slug } = await params;
+  const member = members.find((m) => m.slug === slug);
 
   if (!member) {
     notFound();
