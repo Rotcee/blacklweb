@@ -27,7 +27,7 @@ type Project = {
 export const projects: Project[] = [
   {
     id: "chimera",
-    title: "Bankai",
+    title: "LaSaramdonga",
     description:
       "An advanced honeypot network designed to attract and analyze new strains of IoT malware.",
   },
@@ -50,11 +50,11 @@ export const members: Member[] = [
     name: "Héctor 'Rotce' Villar",
     slug: "hector-villar",
     role: "Team Lead & Threat Analyst",
-    bio: "With a knack for deconstructing complex digital threats, Alex leads the team with a sharp analytical mind and a passion for staying one step ahead of adversaries. His expertise in malware analysis is the cornerstone of our defensive strategies.",
+    bio: "A mi me gusta el flow de la cucaracha cuando hace así, hace así y se emborracha.",
     skills: ["Malware Analysis", "Reverse Engineering", "Threat Intelligence"],
     imageUrlId: "member1",
     socials: [
-      { name: "GitHub", icon: Github, url: "#" },
+      { name: "GitHub", icon: Github, url: "https://github.com/Rotcee" },
       { name: "LinkedIn", icon: Linkedin, url: "#" },
       { name: "Twitter", icon: Twitter, url: "#" },
     ],

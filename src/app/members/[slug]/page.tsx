@@ -8,6 +8,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Home, Network } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Header } from "@/components/header";
 
 export function generateStaticParams() {
   return members.map((member) => ({
@@ -33,19 +34,10 @@ export default function MemberPage({ params }: { params: { slug: string } }) {
 
   return (
     <div className="min-h-screen bg-background text-foreground">
-       <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-14 max-w-screen-2xl items-center justify-end">
-            <Button asChild variant="ghost" size="sm">
-                <Link href="/" className="flex items-center gap-2">
-                    <Home className="h-4 w-4" />
-                    Home
-                </Link>
-            </Button>
-        </div>
-      </header>
+      <Header />
       <main className="container mx-auto px-4 py-12 md:px-6 md:py-20">
         <div className="grid gap-12 md:grid-cols-3">
-          <div className="flex flex-col items-center text-center md:items-start md:text-left">
+          <div className="flex flex-col items-center text-center">
              <Avatar className="mx-auto mb-6 h-48 w-48 border-4 border-primary">
                 <AvatarImage
                   src={getImageUrl(member.imageUrlId).url}
@@ -62,7 +54,7 @@ export default function MemberPage({ params }: { params: { slug: string } }) {
             <h1 className="text-3xl font-bold font-headline sm:text-4xl">{member.name}</h1>
             <p className="mt-1 text-lg text-primary">{member.role}</p>
             
-            <div className="mt-6 flex justify-center md:justify-start space-x-4">
+            <div className="mt-6 flex justify-center space-x-4">
               {member.socials.map((social) => (
                 <Link
                   key={social.name}
