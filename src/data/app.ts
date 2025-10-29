@@ -88,14 +88,15 @@ export const members: Member[] = [
     projects: ["aegis"],
   },
   {
-    name: "Diego",
+    name: "Diego '0racl3' Gamote",
     slug: "fatima-al-jamil",
-    role: "Digital Forensics Expert",
-    bio: "When an incident occurs, Fatima is the first on the scene. She meticulously pieces together digital evidence to understand the 'how' and 'why' of a breach, providing crucial insights that inform our future defense mechanisms.",
-    skills: ["Incident Response", "Memory Forensics", "Data Recovery"],
+    role: "Computer Engineering student",
+    bio: "Hi I'm Diego, a Computer Engineering with an interest in programming, cybersecurity, and software development. Continuously learning and motivated to solve problems using technology.",
+    skills: ["Java", "C/C++"],
     imageUrlId: "member4",
-    socials: [{ name: "LinkedIn", icon: Linkedin, url: "#" }],
-    projects: ["chimera"],
+    socials: [{name: "GitHub", icon: Github, url: "https://github.com/0racl363"}
+    ],
+    projects: [],
   },
   {
     name: "Joao",
