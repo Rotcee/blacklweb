@@ -8,26 +8,26 @@
     },
     {
       "id": "member2",
-      "description": "Profile picture for Maria 'Nyx' Rodriguez",
-      "imageUrl": "https://images.unsplash.com/photo-1561740303-a0fd9fabc646?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjEyNjIzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Profile picture for Alberto 'Gerson1423' Castro",
+      "imageUrl": "/images/alberto_pfp.jpg",
       "imageHint": "portrait person"
     },
     {
       "id": "member3",
-      "description": "Profile picture for Kenji 'Ronin' Tanaka",
-      "imageUrl": "https://images.unsplash.com/photo-1657682041043-d6cc9df38657?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjEyNjIzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Profile picture for Brenda 'L1pbyte' Castro blanco ",
+      "imageUrl": "/images/brenda_pfp.jpg",
       "imageHint": "portrait person"
     },
     {
       "id": "member4",
-      "description": "Profile picture for Diego '0racl3' Gamote",
-      "imageUrl": "https://images.unsplash.com/photo-1708426238272-994fcddabca4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjEyNjIzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Profile picture for Diego '0racl3' Gamote Silva",
+      "imageUrl": "/images/diego_pfp.jpg",
       "imageHint": "portrait person"
     },
     {
       "id": "member5",
-      "description": "Profile picture for Sam 'Root' Jones",
-      "imageUrl": "https://images.unsplash.com/photo-1592849902530-cbabb686381d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwb3J0cmFpdCUyMHBlcnNvbnxlbnwwfHx8fDE3NjEyNjIzOTh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "Profile picture for João 'J0hnny_C4$h' Pereira",
+      "imageUrl": "/images/joao_pfp.jpg",
       "imageHint": "portrait person"
     }
   ]
