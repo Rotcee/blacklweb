@@ -27,7 +27,7 @@ type Project = {
 export const projects: Project[] = [
   {
     id: "chimera",
-    title: "LaSaramdonga",
+    title: "Chimera",
     description:
       "An advanced honeypot network designed to attract and analyze new strains of IoT malware.",
   },
@@ -49,22 +49,22 @@ export const members: Member[] = [
   {
     name: "Héctor 'Rotce' Villar",
     slug: "hector-villar",
-    role: "Team Lead & Threat Analyst",
-    bio: "A mi me gusta el flow de la cucaracha cuando hace así, hace así y se emborracha.",
-    skills: ["Malware Analysis", "Reverse Engineering", "Threat Intelligence"],
+    role: "Computer and AI Engineer",
+    bio: "Hi! I'm Héctor, a Dual Degree student in Computer Engineering and Artificial Intelligence. I'm passionate about technology and continuous learning: building projects, exploring new tools, and deepening my knowledge in AI and software development. Outside of academics, I love working out and, above all, enjoying great food.",
+    skills: ["Fast learner & self-taught", "Python", "Git/Github"],
     imageUrlId: "member1",
     socials: [
       { name: "GitHub", icon: Github, url: "https://github.com/Rotcee" },
-      { name: "LinkedIn", icon: Linkedin, url: "#" },
-      { name: "Twitter", icon: Twitter, url: "#" },
+//      { name: "LinkedIn", icon: Linkedin, url: "#" },
+//      { name: "Twitter", icon: Twitter, url: "#" },
     ],
     projects: [],
   },
   {
-    name: "Maria 'Nyx' Rodriguez",
+    name: "Brenda",
     slug: "maria-rodriguez",
     role: "Penetration Tester",
-    bio: "Maria is our master of infiltration. She thinks like a hacker to find and exploit vulnerabilities before they can be leveraged by malicious actors. Her creative approach to security testing ensures our defenses are always battle-hardened.",
+    bio: "Brenda is our master of infiltration. She thinks like a hacker to find and exploit vulnerabilities before they can be leveraged by malicious actors. Her creative approach to security testing ensures our defenses are always battle-hardened.",
     skills: ["Web Apps", "Network Security", "Social Engineering"],
     imageUrlId: "member2",
     socials: [
@@ -74,8 +74,8 @@ export const members: Member[] = [
     projects: ["phishguard"],
   },
   {
-    name: "Kenji 'Ronin' Tanaka",
-    slug: "kenji-tanaka",
+    name: "Alberto",
+    slug: "alberto-castro",
     role: "DevSecOps Engineer",
     bio: "Kenji bridges the gap between development and security, embedding security practices into the entire software lifecycle. His work ensures that our solutions are not only innovative but also secure from the ground up.",
     skills: ["CI/CD Security", "Cloud Security", "IaC"],
@@ -88,7 +88,7 @@ export const members: Member[] = [
     projects: ["aegis"],
   },
   {
-    name: "Fatima 'Oracle' Al-Jamil",
+    name: "Diego",
     slug: "fatima-al-jamil",
     role: "Digital Forensics Expert",
     bio: "When an incident occurs, Fatima is the first on the scene. She meticulously pieces together digital evidence to understand the 'how' and 'why' of a breach, providing crucial insights that inform our future defense mechanisms.",
@@ -98,7 +98,7 @@ export const members: Member[] = [
     projects: ["chimera"],
   },
   {
-    name: "Sam 'Root' Jones",
+    name: "Joao",
     slug: "sam-jones",
     role: "Security Researcher",
     bio: "Driven by an insatiable curiosity, Sam explores the uncharted territories of cybersecurity. His research into emerging threats and novel cryptographic methods keeps BlackL at the cutting edge of the industry.",

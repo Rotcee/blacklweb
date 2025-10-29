@@ -41,9 +41,7 @@ const HeroSection = () => (
       BlackL Cyber Group
     </h1>
     <p className="mt-4 max-w-3xl text-lg text-muted-foreground">
-      Guardians of the Digital Frontier. A collective of cybersecurity
-      enthusiasts dedicated to research, innovation, and education in the
-      digital defense space.
+      A group of cybersecurity enthusiasts focused on developing solutions, continuous learning, and promoting digital defense.
     </p>
     <div className="mt-8 flex flex-wrap justify-center gap-4">
       <Button asChild size="lg">
@@ -67,7 +65,7 @@ const AboutUsSection = () => (
           Our Mission & Projects
         </h2>
         <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-          We are a team of students passionate about cybersecurity, dedicated to exploring the depths of digital security through hands-on projects and collaborative research. Our goal is to innovate and educate, making the digital world a safer place.
+          We are a team of people passionate about cybersecurity, dedicated to exploring the depths of digital security through hands-on projects and collaborative research. Our goal is to innovate and educate, making the digital world a safer place.
         </p>
       </div>
       <div className="mx-auto mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">

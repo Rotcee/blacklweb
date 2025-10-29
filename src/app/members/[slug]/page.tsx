@@ -107,7 +107,7 @@ export default async function MemberPage({ params }: { params: { slug: string } 
                     </Card>
                   ))
                 ) : (
-                    <p className="text-muted-foreground">No projects to display.</p>
+                    <p className="text-muted-foreground">Work in progress...</p>
                 )}
               </div>
             </div>
