@@ -101,14 +101,14 @@ export const members: Member[] = [
     projects: [""],
   },
   {
-    name: "João 'J0hnny_C4$h' ",
+    name: "João 'J0hnny_C4$h' Berenguer ",
     slug: "joao",
     role: "Computer Engineering student",
-    bio: "Driven by an insatiable curiosity, Joao explores the uncharted territories of cybersecurity. His research into emerging threats and novel cryptographic methods keeps BlackL at the cutting edge of the industry.",
-    skills: ["C/C++", "Java", ],
+    bio: " Second year student of the Degree in Computer Engineering at the University of Vigo.I have one year of experience in the development of systems for autonomous vehicles, participating in two university projects focused on driverless system programming. In addition, I have worked on various personal projects. I am defined by initiative, curiosity and constant interest in learning and facing new challenges.",
+    skills: ["C/C++", "Java","Python" ],
     imageUrlId: "member5",
     socials: [
-      { name: "GitHub", icon: Github, url: "#" },
+      { name: "GitHub", icon: Github, url: "https://github.com/johnpberenger" },
      // { name: "Twitter", icon: Twitter, url: "#" },
     ],
     projects: [""],
