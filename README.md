@@ -1,66 +1,62 @@
 # BlackL Cyber Group
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A showcase website for the BlackL student cybersecurity group, featuring our mission, members, and projects.
 
-## Table of Contents
+## ✨ Features
 
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
+*   **Homepage:** Introducing the group's mission and vision.
+*   **Member Profiles:** Get to know the team behind BlackL.
+*   **Project Portfolio:** Explore the projects we have developed.
+*   **Responsive Design:** Fully accessible from mobile and desktop devices.
 
-## Getting Started
+## 🚀 Getting Started
 
-To get a local copy up and running, follow these simple steps.
+Follow these steps to get a local copy up and running.
 
 ### Prerequisites
 
-Make sure you have the following installed on your development machine:
-
-- Node.js (v20 or later)
-- npm (usually comes with Node.js)
+*   Node.js (v20 or later)
+*   npm (included with Node.js)
 
 ### Installation
 
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/Rotcee/blacklweb
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd blacklweb
-   ```
-3. Install the dependencies:
-   ```sh
-   npm install
-   ```
+1.  Clone the repository:
+    ```sh
+    git clone https://github.com/Rotcee/blacklweb
+    ```
+2.  Navigate to the project directory:
+    ```sh
+    cd blacklweb
+    ```
+3.  Install dependencies:
+    ```sh
+    npm install
+    ```
 
-## Usage
+## 🛠️ Usage
 
-To start the development server, run the following command:
+To start the development server, run:
 
 ```sh
 npm run dev
 ```
 
-Open [http://localhost:9002](http://localhost:9002) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## Technologies Used
+## 💻 Tech Stack
 
-- [Next.js](https://nextjs.org/) - The React Framework for Production
-- [React](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [TypeScript](https://www.typescriptlang.org/) - A typed superset of JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
-- [shadcn/ui](https://ui.shadcn.com/) - Re-usable components built using Radix UI and Tailwind CSS
+*   **Next.js:** The React Framework for Production.
+*   **React:** A JavaScript library for building user interfaces.
+*   **TypeScript:** A typed superset of JavaScript.
+*   **Tailwind CSS:** A utility-first CSS framework.
+*   **Shadcn/UI:** Re-usable components built using Radix UI and Tailwind CSS.
 
-## Contributing
+## 🤝 Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Contributions are welcome. If you'd like to contribute, please check our [contribution guidelines](CONTRIBUTING.md).
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
